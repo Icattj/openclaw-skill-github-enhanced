@@ -1,3 +1,7 @@
+# ---
+
+> OpenClaw AI Agent Skill
+
 ---
 name: github-enhanced
 description: Advanced GitHub operations via the gh CLI. Search repos, issues, PRs, view code, manage repos, and more. Use when asked to search GitHub, find repositories, look up issues/PRs, view repo details, compare projects, or perform any GitHub operation beyond basic git. Requires gh CLI with authentication.
@@ -72,3 +76,13 @@ gh api search/repositories -f q="created:>$(date -d '7 days ago' +%Y-%m-%d)" -f 
 ## Script
 
 `scripts/gh-search.sh` provides a quick search with formatted output.
+
+## Installation
+
+```bash
+cp -r github-enhanced/ ~/.openclaw/workspace/skills/github-enhanced/
+```
+
+## License
+
+MIT © [Sentra Technology](https://github.com/Icattj)
